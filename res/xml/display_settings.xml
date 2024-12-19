@@ -21,6 +21,12 @@
     android:title="@string/display_settings"
     settings:keywords="@string/keywords_display">
 
+    <SwitchPreferenceCompat
+        android:key="window_ignore_secure"
+        android:title="@string/ignore_window_secure_title"
+	android:summary="@string/ignore_window_secure_summary"
+	    settings:controller="com.android.settings.display.IgnoreWindowSecurePreferenceController"/>
+
     <PreferenceCategory
         android:title="@string/category_name_brightness"
         android:order="-200">
